@@ -19,7 +19,7 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">~ BUCHA ~</a>
+                    <a class="navbar-brand" href="../Home_Page/home_page.html">~ BUCHA ~</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link active" aria-current="page" href="../Home_Page/home_page.html">Trang chủ</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -37,8 +37,8 @@
                                     Sản phẩm
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Laptop</a></li>
-                                    <li><a class="dropdown-item" href="#">Linh kiện điện tử</a></li>
+                                    <li><a class="dropdown-item" href="../Laptop_Page/lapPg.html">Laptop</a></li>
+                                    <li><a class="dropdown-item" href="../OtherProduct_Page/OtherProduct_Page.html">Linh kiện điện tử</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -51,51 +51,77 @@
                 </div>
             </nav>
         </div>
-        
+
         <div class="show">
             <div class="row">
                 <!-- Grid column -->
-                <div class="col-md-2">
-                    <div id="accordion">
-                        <div class="cap">Giá bán</div>
-                        <div class="ct">
-                            <label><input type="checkbox" class="giaban" value="1">Dưới 5 triệu</label>
-                            <label><input type="checkbox" class="giaban" value="2">Từ 5 đến 10 triệu</label>
-                            <label><input type="checkbox" class="giaban" value="3">Từ 10 đến 15 triệu</label>
-                            <label><input type="checkbox" class="giaban" value="4">Trên 15 triệu</label>
-                        </div>
-                        <div class="cap">Màn hình</div>
-                        <div class="ct">
-                            <label><input type="checkbox" class="manhinh" value="1">Dưới 5 inch</label>
-                            <label><input type="checkbox" class="manhinh" value="2">Từ 5 inch trở lên</label>
-                        </div>
+                <div class="col-2 mt-5">
+                    <div class="card">
+                        <h5 class="card-title text-dark m-2">FILTER</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-secondary">
+                                <h6 class="card-title text-secondary">Hãng</h6>
+                                <div class="brand-option" id="add-brand-option">
+                                    <!-- <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Asus" id="Asus">
+                                        <label class="form-check-label text-dark">Asus</label>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <!-- <li class="list-group-item text-secondary">
+                                <h6 class="card-title text-secondary">Website</h6>
+                                <div class="website-option">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Tiki" id="Tiki">
+                                        <label class="form-check-label text-dark">Tiki</label>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li class="list-group-item text-secondary">
+                                <h6 class="card-title text-secondary">Giá (VNĐ)</h6>
+                                <div class="price-option">
+                                    <input type="number" class="form-control mb-2" placeholder="Từ" id="min-price">
+                                    <input type="number" class="form-control" placeholder="Đến" id="max-price">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
 
                 <div class="col">
                     <div class="content__paging">
+                        <div class="sort-config">
+                            <!-- <label for="">Sắp xếp: </label> -->
+
+                            <select name="" id="sort-select">
+                                <option value="0" selected disabled>Sắp xếp</option>
+                                <option value="1">Tăng theo giá</option>
+                                <option value="-1">Giảm theo giá</option>
+                            </select>
+                        </div>
                         <!-- <div class="content__paging-option"> -->
-                            <div class="page-config">
-                                <label for="">Item per page: </label>
-                                
-                                <select name="" id="mySelect">
-                                    <option value="3">3</option>
-                                    <option value="6" selected>6</option>
-                                    <option value="9">9</option>
-                                    <option value="12">12</option>
-                                </select>
-                            </div>
-                            
-                            <div class="total-page"></div>
-                            
-                            <div class="total-item"></div>
+                        <div class="page-config">
+                            <label for="">Mỗi trang: </label>
+
+                            <select name="" id="mySelect">
+                                <option value="1">1</option>
+                                <option value="3" selected>3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+
+                        <div class="total-page"></div>
+
+                        <div class="total-item"></div>
                         <!-- </div> -->
-                            
+
+
                         <div class="page">
                             <ul>
-                                <li class="btn-prev btn-active fas fa-angle-left"></li>
-    
+                                <li class="btn-prev btn-no-active fas fa-angle-left"></li>
+
                                 <div class="number-page" id="number-page">
                                     <!-- <li class="active">
                                         <a>1</a>
@@ -107,11 +133,13 @@
                                         <a>3</a>
                                     </li> -->
                                 </div>
-    
+
                                 <li class="btn-next fas fa-angle-right"></li>
                             </ul>
                         </div>
                     </div>
+
+
                     <section class="content__product">
                         <div class="container py-3">
                             <div class="add-product-here row" id="product">
@@ -186,10 +214,10 @@
                             Sản phẩm nè:
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Laptop</a>
+                            <a href="../Laptop_Page/lapPg.html" class="text-reset">Laptop</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Linh kiện điện tử</a>
+                            <a href="../OtherProduct_Page/OtherProduct_Page.html" class="text-reset">Linh kiện điện tử</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -216,7 +244,7 @@
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
                 © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BUCHA-TEAM</a>
+                <a class="text-reset fw-bold" href="../Home_Page/home_page.html">BUCHA-TEAM</a>
             </div>
             <!-- Copyright -->
         </footer>

@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./compPg.css">
+    <link rel="stylesheet" href="./two_product.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <title>Zô tri</title>
@@ -43,63 +42,29 @@
                                 </ul>
                             </li>
                         </ul>
-                        <!-- <form class="d-flex" role="search">
-                            <input class="searchText form-control me-2" type="search" placeholder="Nhập vào đây nè"
-                                aria-label="Search">
-                            <button id="search" class="btn btn-outline-success" type="submit">Search</button>
-                        </form> -->
                     </div>
                 </div>
             </nav>
         </div>
 
-        <div class="show my-4 ms-3">
-            <div class="row">
-                <div id="add-imgs-show" class="col-3 w3-content rounded-3"
-                    style=" min-width:350px; width: 40%">
-                    <!-- <div class="mt-4 w3-content">
-                        <div class="row ms-0 show-img" style="width: 100%; height: 300px; overflow: hidden;">
-                            <img class="rounded-5 mySlides" src=${proImgs[0]} style="width:100%; height: 100%; ">
-                            <img class="rounded-5 mySlides" src=${proImgs[x]} style="width:100%; height: 100%; display:none">
-                        </div>
-                        <div class="row ms-0 w3-section" style="width: 100%; height: 50px"> 
-                            <img class="demo rounded-3 w3-opacity w3-hover-opacity-off" src=${proImgs[x]} style="height: 100%; width:20%; cursor:pointer" onclick="currentDiv(${x+1})">
-                        </div>
+        <div class="show">
+            <div class="row mx-0 mt-4">
+                <div class="col-0" style="width: 10%"></div>
+                <div class="col-0" id="add-product-1" style="display: flex;width: 45%;border-right: groove 3px rgba(0,0,0,0.5);flex-direction: column;align-items: center;">
+                    <!-- PRODUCT 1 -->
+                    <!-- <h4 class="text-secondary">Product 1</h4>
+                    <img src="https://images.fpt.shop/unsafe/fit-in/240x240/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/1/26/637787904727727554_asus-tuf-gaming-fx506lh-den-2022-dd.jpg" style="width: 80%; height: 200px; object-fit: contain">
+                    <div class="d-flex justify-content-between" style="width: 200px">
+                        <p class="text-muted">Giá chỉ từ:</p>
+                        <h5 class="text-danger">20.000.000đ</h5>
                     </div> -->
                 </div>
-
-                <div class="col" id="add-left-border">
-                    <div class="row" id="add-product-name" style="width: 60%;">
-                        <!-- <h4 class="text-dark">Laptop Asus ThinkBook 14s Yoga ITL i5</h4> -->
-                    </div>
-                    <div class="row" id="add-list-products">
-                        <!-- <a style="width: 12rem; text-decoration: none; align-items: center;" class="card border-3 border-secondary m-3"
-                            href="https://tiki.vn/thieu-nu-chien-xa-tap-1-p38322058.html?spid=38322059&itm_campaign=tiki-reco_UNK_DT_UNK_UNK_deal-hot_UNK_rule-base-flash-deal-v3_UNK_RB_batched_PID.38322059&itm_medium=CPC&itm_source=tiki-reco&tclid=ddb26764716539d77b003c364d37e2eed1df7b2fc9673a44378e4aca3424323f">
-                            <img style="object-fit: contain;height: 30px;" class="card-img-top mt-2"
-                                src="https://salt.tikicdn.com/ts/upload/e4/49/6c/270be9859abd5f5ec5071da65fab0a94.png">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h5 class="text-danger">20.000.000đ</h5>
-                                </li>
-                            </ul>
-                        </a>                       -->
-                    </div>
+                <div class="col-0" id="add-product-2" style="display: flex;width: 45%;flex-direction: column;align-items: center;">
+                    <!-- PRODUCT 2 -->
                 </div>
             </div>
-            <div id="add-infor-table" class="row card re-card st-card mt-4" style="min-width: 350px; width: 50%;">
-                <!-- <h2 class="infor-header card-title">Thông số kỹ thuật</h2>
-                <table class="table table-striped table-bordered">
-                    <colgroup>
-                        <col span="1" style="width: 15%;">
-                        <col span="1" style="width: 35%;">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="row">CPU</th>
-                            <td>Mark</td>
-                        </tr>
-                    </tbody>
-                </table> -->
+            <div class="row card re-card st-card mt-4 mx-0"  id="add-infor-table">
+                <!-- INFOR TABLE -->
             </div>
         </div>
 
@@ -170,7 +135,7 @@
         </div>
     </div>
 
-    <script src="./compPg.js"></script>
+    <script src="./two_products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

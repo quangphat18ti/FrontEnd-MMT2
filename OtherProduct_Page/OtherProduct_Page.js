@@ -32,35 +32,35 @@ const product = [
     }
 ]
 
-!async function getData() {
-    const URL = 'https://mmt-main-dbserver.vercel.app/api/product';
-    // const URL = 'https://mmt-db-doan-2.vercel.app/api/product';
-    // const URL = 'https://jsonplaceholder.typicode.com/todos/1'
-    let response = await fetch(URL, {
-        method: 'GET',
-        // mode: "no-cors",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    // .then(function(response){
-        //     return response.json();
-        // })
-        // .catch(function(err) {
-            //     console.log('Lỗi: ', err);
-            // })
-    // let response = await fetch(URL);
-
-    response = response.json();
-    console.log('Type of response: ', typeof response)
-    console.log('Response: ', response)
-    console.log('Status: ', response.status)
+// !async function getData() {
+//     const URL = 'https://mmt-db-doan-2.vercel.app/api/website';
+//     // const URL = 'https://mmt-db-doan-2.vercel.app/api/product';
+//     // const URL = 'https://jsonplaceholder.typicode.com/todos/1'
+//     let response = await fetch(URL, {
+//         method: 'GET',
+//         // mode: "no-cors",
+//         headers: {
+//             "Content-Type": "application/json"
+//         }
+//     })
+//     // .then(function(response){
+//         //     return response.json();
+//         // })
+//         // .catch(function(err) {
+//             //     console.log('Lỗi: ', err);
+//             // })
 //     // let response = await fetch(URL);
-//     // console.log(response);
-//     // response = await response.json();
-//     console.log(response)
-//     // console.log(response.data);
-}();
+
+//     response = response.json();
+//     console.log('Type of response: ', typeof response)
+//     console.log('Response: ', response)
+//     console.log('Status: ', response.status)
+// //     // let response = await fetch(URL);
+// //     // console.log(response);
+// //     // response = await response.json();
+// //     console.log(response)
+// //     // console.log(response.data);
+// }();
 
 let perPage = document.querySelector('#mySelect option[selected]').value;
 let sortOpt = document.querySelector('#sort-select option[selected]').value;
